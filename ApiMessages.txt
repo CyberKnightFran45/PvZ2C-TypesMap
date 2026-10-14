@@ -1,0 +1,733 @@
+• PvZ2C API Messages (Request/Response IDs)
+
+------------  Test  ------------
+
+NOTE: this commands were patched to only function in Devs build. 
+
+They no longer work in Stage/Production server.
+
+T1 | Encrypt
+T2 | Decrypt
+T3 | Test
+T4 | MakeFakeRankData
+T5 | ClearRank
+T6 | GetAllRankData
+T7 | Delete User
+T8 | Simulate Clear Cold User
+T9 | Reset Annoucement
+T10 | Reset LevelOfDay
+T11 | Refresh Daifu Shop Item
+T12 | ClearAllConstraint
+T13 | reset action data
+T23 | FullEndlessLife
+T33 | MakeFakeEndlessRankData
+T34 | SetEndlessScore
+T35 | GetEndlessRank
+T40 | Clear EnlessRank List
+T41 | Fresh EndlessRank List
+T47 | Charge For Christmas Action
+T48 | Init Rebate Christmas Action
+T53 | Reset Monthly card
+T54 | Charge For Monthly card
+T56 | reset summer boss
+T57 | Set Item Num
+T58 | Clear Cost Action
+T59 | GetUserSessionKey
+T60 | New Endless System
+T61 | Reset Double Recharge Status
+T62 | Gacha Test Interface
+T63 | Spring Festival Event Test Interface
+T64 | reset  nationday seven
+T65 | reset  nationday charge
+T66 | reset  minigame
+T67 | reset  profile updatetime
+T68 | Mini Game Leaderboard Test Interface
+T69 | Clear Trial Card Data
+T71 | Clear Lantern Riddle Data
+T74 | Send Item
+T85 | Two Yuan Red Envelope Test Interface
+T87 | Firecracker Set Data Interface
+T95 | Limited Wheel Set Data Interface
+T97 | Add Super Z Key
+T99 | test
+T102 | Decrypt User Id
+T106 | Penny Guide / Hammer Event
+T107 | 
+T108 | Delete Endless API
+T112 | Penny Pursuit Various Items
+T113 | Costume Piece (Normal)
+T114 | 
+T118 | Complete 7-Day Guide Task
+T119 | Ban User Device
+T121 | yan test
+T123 | Modify Artifact Data
+T129 | Skip Memory Lane Level
+T132 | Fetch Real-time Level Leaderboard
+T150 | Query/Set Play Reward
+T978 | Disabled User List
+T979 | Plant Cultivation Trial Card Operation
+T980 | Travel Handbook New Player Event Activation
+T981 | Special Offer Gift Skip Purchase
+T982 | Clear Artifact Cache
+T983 | Object Storage (ad Android, iOS)
+T984 | Query & Modify Recharge Order Status
+T985 | Penny Pursuit Score Over Limit Query
+T1017 | Get Rollback Server Player Data
+T1022 | Restore Backup Database Data
+T1023 | Query Backup Database Data
+T1031 | Set Returning Player Popup Optimization
+T1001 | Operate Trial Card
+
+------------  Account Removal  ------------
+
+T157 | Account Binding Channel Cleanup
+T160 | Query Account Deactivation Record
+T161 | Restore Deactivated Account
+T165 | Delete DIY Creator Info
+
+------------  Real-name Verification  ------------
+
+T125 | Remove Real-name Verification
+
+------------  General  ------------
+
+I5 | get newest resource version
+I7 | Encrypt di and uuid
+I8 | 
+V202 | Silence Reg & Login
+V203 | GetUserProfile
+V204 | UploadUserProfile
+V205 | GetProfileMd5
+V206 | UploadCompressedUserProfile
+V207 | GetServerConfig
+V208 | StartConstraintStage
+V209 | costGem
+V210 | GetConstraintStageCooldown
+V211 | UploadEndlessRankScore
+V212 | GetEndlessRank
+V213 | InitOrder
+V214 | GetRetryOrderList
+V215 | IsUserExist
+V216 | GetSession
+V217 | BuySpringSale
+V218 | GetActionStatus
+V219 | Bind Uuid
+V220 | Uuid Login
+V221 | LevelOfDay
+V222 | LuaActivity
+V223 | verifyReceipt
+V225 | getChannelDailyReward
+V226 | GetTotalBonusPackage
+V228 | GachaDraw
+V245 | GetFunctionEnabled List
+V246 | GetEndlessRankandEndless
+V249 | GetEndlessRankBonus
+V267 | 
+V269 | GetCostCelebrationBonus
+V279 | GetWheelSurfBonus
+V280 | GetExplorePlantStatus
+V281 | StartExplore
+V282 | Stop/Finish Explore
+V283 | SettleExploreBonus
+V284 | GetExploreSurprise
+V273 | EndBossRace
+V299 | Get/Cost Instance
+V303 | GetActionInfo
+V304 | GetSummerActionBonus
+V305 | SummerActionGacha
+V306 | SummerActionPlantComposit
+V308 | BillCallback
+V316 | GetPlayerInfo
+V310 | SetPlayerInfo
+V311 | SetPlayerFace
+V312 | SetPlayerName
+
+------------  New Penny Gacha  ------------
+
+V313 | New Penny Gacha
+V333 | New Penny Gacha Preview Plant List
+V323 | Furnace System?
+
+------------  Plant Family  ------------
+
+V325 | Family System Unlock Talent
+V326 | Family System Refresh Talent
+V327 | Family System Replace Talent
+V328 | Family System Fetch Status
+
+------------  Redeem Gift Codes  ------------
+
+V330 | New-type Gift Code
+
+------------  New Endless Zone  ------------
+
+V318 | Get New Endless Plant and Level Info
+V319 | Endless Level Skip
+V320 | Endless Boost Card Draw
+V321 | Endless Boost Sync Status
+V322 | Endless Battle Sync Status
+V329 | Endless Claim Leaderboard Reward
+V331 | Endless Buy Tactical Cuke
+V1158 | Endless Claim Task
+
+------------  Red Envelope Event  ------------
+
+V332 | Open New Year Red Envelope
+V334 | Get Red Envelope Opening Info
+V336 | Spring Festival Shop
+V337 | Dinosaur Crisis
+V338 | Buy Spring Festival Shop Item
+V339 | Get Player Item Info
+
+------------  Arbor Day Event  ------------
+
+V341 | Harvest Fruit
+V344 | Refresh Fruit
+V342 | Water
+V343 | Get/Buy Water
+V345 | Buy Water
+T178 | Set Server-wide Watering Amount
+
+------------  Live Issue Save Repair  ------------
+
+NOTE: just as Test Commands, these no longer work.
+
+T180 | Get Pre-incident Save
+T181 | Repair Partial Player Save Data
+
+------------  User Actions  ------------
+
+V347 | DanDanGacha
+V348 | New Year 2018 open red packet
+V349 | New Year 2018 buy red packet notify
+V355 | Buy Special Offer Gift Pack
+V357 | New Year 2018 open fire cracker
+V358 | Whitelist
+V952 | Accumulative Sign Status
+
+------------  Spring Festival Event  ------------
+
+V361 | Claim Trial Card
+V362 | Claim Quiz Reward
+V363 | Claim Lantern Riddle Reward
+V364 | Limit Plant Purchase Count
+
+------------  World Cup Event  ------------
+
+V365 | Enter World Cup
+V366 | Game Settlement
+V367 | Buy Admission Ticket
+V370 | unlockTeam
+V381 | unlockTeam
+V392 | 
+V389 | Daily Check-in
+
+------------  2017 WeChat Share Event  ------------
+
+V400 | Get WeChat Share Reward
+
+------------  2017 National Day Event  ------------
+
+V401 | National Day 7-Day Login Event Reward Claim
+V402 | National Day New Recharge Event Reward
+
+------------  Need for Speed Collab  ------------
+
+V405 | Need for Speed Check-in
+V406 | Need for Speed Claim Task
+V407 | Need for Speed Redeem
+
+------------  Secret Realms  ------------
+
+V415 | Claim Secret Realms Task Reward
+T1014 | Unlock Secret Realms Plant
+
+
+------------  PvP Shop  ------------
+
+V501 | GetPVPShopState
+V502 | BuyItemInPVPShop
+V514 | Costume Coupon Redeem Costume
+
+------------  Announcements  ------------
+
+V600 | GET Announcement INFO
+V601 | GET Announcement REWARD
+V602 | Treasure Pavilion Gacha
+V603 | Treasure Pavilion Coupon Redeem Gems
+
+------------  Bannying System  ------------
+
+NOTE: IDs marked with an * means that they no longer work in current version
+
+V700 | syns
+V701 | Get ProfileList
+V702 | Delete Profile
+V703 | Login
+V704 | GetBlockProfileInfo
+V705 | Fresh
+V706 | Endless Edit Leaderboard
+V707 | Ban/Unban User*
+
+------------  Dave's Kitchen  ------------
+
+V711 | Make Corn
+V712 | Claim Task
+V713 | Buy Gift Pack with Gems
+
+------------  Dragon Treasure  ------------
+
+V714 | Dragon Crystal Gacha
+V715 | Reset Reward Pool
+V716 | Points Shop Redeem
+V717 | Dragon Crystal/Points Conversion
+
+------------  Creative Courtyard  ------------
+
+V720 | Upload Level (Publish or Modify)
+V721 | Battle Settlement
+V722 | Like or Dislike
+V723 | Browse (Most Played, Highest Rated, My Favorites)
+V724 | Get Creation List
+V725 | Search
+V726 | Get Level Details
+V727 | Delete Level
+V728 | Unfavorite/Favorite Specified Level
+V729 | Get Clear Leaderboard
+V730 | Get Likes & Play Times for Specified Level
+V731 | Modify Level Name
+V732 | Modify Whether Level Can Be Copied (Downloaded)
+V733 | Challenge Level
+V734 | Get All Levels Under Player
+V736 | Add Level Report
+V739 | Send Verification Code
+V740 | Link Phone Number
+V741 | Query Verification Requirements
+V742 | Verify Now
+V743 | 2024 New Year Gift Box
+T140 | DIY Level Batch Recommend
+T141 | Illegal Log Operation
+T142 | Skip User Device Verification
+
+------------  Penny's Classroom  ------------
+
+V760 | Level Settlement
+
+------------  Account Binding  ------------
+
+V770 | Account Binding
+
+------------  Rift Anti-cheat System  ------------
+
+V963 | Verify at Level Start
+T170 | Level Data Verification
+
+------------  Golden Egg Event  ------------
+
+V980 | Prize Pool Set Grand Prize
+V981 | Prize Pool Draw/Query
+V982 | Golden Egg Event Task Operation (Claim/View)
+V983 | Golden Egg Event Reset Prize Pool
+
+------------  AntiCheatLog / ACLog  ------------
+
+V750 | upload AntiCheatLog
+V751 | UploadCompressedUserProfile with anticheat info
+V752 | GetUserProfile
+V755 | Perfect Transfer
+
+------------  2018 Nation Day  ------------
+
+V761 | op 2018_NATIONDAY_WHEEL_LUCK
+V762 | op 2018_NATIONDAY_DAILY_WELFARE
+V763 | op 2018_NATIONDAY_CHARGE_BONUS
+
+------------  Limit Lottery  ------------
+
+V781 | open limit lottery
+V782 | buy crystal
+V783 | cost crystal, to get new plant
+V792 | 
+V793 | 
+V798 | 
+V796 | 
+
+------------  7-Day Guide  ------------
+
+V950 | active seven day guide
+V951 | draw seven day guide rewards
+
+------------  Cool Summer Event  ------------
+
+V430 | Cool Summer Gacha
+V431 | Battle Pass Level Reward Claim
+V433 | Cool Summer Add Exp || Points
+V434 | Cool Summer Leaderboard Settlement
+
+------------  Penny Tier Reward  ------------
+
+V965 | Penny Tier Reward Claim
+
+------------  New PvP Mode  ------------
+
+V821 | Start Matchmaking
+V822 | Query Matchmaking Status
+V823 | Updates Matchmaking Status
+V824 | Send Action Queue
+V825 | Battle Heartbeat
+V826 | Battle Settlement
+V827 | Cancel Matchmaking
+V828 | Upload Battle Stats Data
+V829 | Query Battle History
+V830 | Query Opponent Info
+V831 | Claim Season Reward
+V832 | Zombie Upgrade
+V833 | Set Zombie Lineup
+V834 | Level Report
+V835 | PVP Shop Refresh
+T174 | Set newpvp Parameters
+
+------------  Other  ------------
+
+V800 | GetWheelSurfBonus
+V801 | GetLitteGameBonus
+V803 | updateRewardstatus
+V911 | 
+V912 | 
+V913 | 
+V914 | 
+V916 | 
+V917 | 
+V918 | 
+V919 | 
+V920 | 
+V923 | 
+V924 | 
+V925 | 
+V926 | 
+V927 | Penny Pursuit Settlement
+V928 | 
+V929 | 
+V933 | 
+V934 | 
+V935 | 
+V936 | 
+V938 | 
+V972 | SummerGetShopDesc
+V973 | buyProp
+V974 | buyPhysical_power
+V971 | customs_award
+V976 | summerAchievement
+V708 | GMgetUserActivity
+V1000 | 
+
+------------  2022 Growth Gift Pack  ------------
+
+V410 | Growth Gift Pack Tier Reward Claim
+T156 | Growth Gift Pack Operation
+
+------------  Secret Realms 2.0  ------------
+
+V411 | Secret Realms Settlement
+V412 | Unlock Hard Level
+V413 | Claim Achievement Reward
+V440 | Draw Card
+V441 | Select Card
+T158 | Clear Achievement Reward Data
+
+------------  Card Warfare  ------------
+
+V421 | Battle Settlement
+V422 | Claim Achievement Reward
+V423 | Restart
+V424 | Select Card
+V425 | Card GM Data Operation
+
+------------  Collectible Item  ------------
+
+V417 | Collectible Item Equip/Unequip
+T155 | Collectible Operation
+
+------------  Limited Treasure Hunt  ------------
+
+V810 | Limited Treasure Hunt -- Gacha
+V811 | Showcase Summon -- Reach Cumulative Draw Reward (Privilege Reward Claim)
+V812 | Showcase Summon -- Card Redeem for Plant Piece
+T171 | Showcase Treasure Hunt Player Config Operation
+
+------------  Marquee  ------------
+
+V820 | Get Marquee Data
+T172 | Operate Marquee Status
+
+------------  Carnival Event  ------------
+
+T173 | Carnival - Modify
+V815 | Carnival - Redeem Gift Pack
+
+------------  Gene Cultivation  ------------
+
+V851 | Gene Fragment Draw
+V850 | Gene Fragment Upgrade
+V852 | Gene Shop Fetch
+V854 | Gene Talent Unlock || Upgrade
+T176 | Gene GM
+
+------------  Spring Festival Gift Pack  ------------
+
+V853 | Set Gift Pack Content
+
+------------  New PvP Battle Pass  ------------
+
+V857 | newpvp Task Reward Claim
+V856 | newpvp Battle Pass Level Reward Claim
+T177 | newPvptask gm
+
+------------  Main Level  ------------
+
+T175 | Skip Main Level
+
+------------  Cornucopia Event  ------------
+
+V865 | Get Leaderboard Data
+V866 | Leaderboard Reward Settlement
+V867 | Cornucopia Gacha
+V868 | Player Task Reward Claim
+V869 | Bubble Reward Claim
+T184 | Cornucopia GM Setting
+T185 | Stage List
+T186 | Test Server IP Whitelist
+T189 | Winter Celebration Leaderboard
+
+------------  Wishing Well  ------------
+
+V870 | Wishing Well Player Gacha
+V872 | Wishing Well Set Reward
+
+------------  Invitation Rewards  ------------
+
+V875 | Daily Share Success
+V876 | Bind Invite Code
+V877 | Claim Task Reward
+V878 | Gacha
+
+------------  10th Anniversary Retrospective  ------------
+
+V890 | Claim Reward
+
+------------  VIP Card Trial  ------------
+
+V520 | Get Trial Card Data
+V521 | Use Trial Card
+
+------------  Plant Cultivation  ------------
+
+V987 | Claim Cultivated Plant
+V988 | Claim Cultivation Task
+V989 | Claim Plant Cultivation Reward
+V990 | Gems Redeem for Growth Points
+T192 | Delete Plant Cultivation Data
+T194 | Add Arbor Day Personal Watering Count
+T196 | Query Lucky Chest Cheat List
+V995 | Artifact Reforge
+V996 | Save Artifact Reforge Value
+V1001 | Gems Redeem for Gacha Coupon
+
+------------  Rewards for Returning  ------------
+
+V997 | Activate 7-Day Check-in
+V998 | New Player Check-in Claim Reward
+V1005 | Activate Special Offer Gift
+V1006 | Special Offer Gift Claim Reward
+V1007 | Activate Discount Shop
+V1008 | Discount Shop Buy Gift Pack with Gems
+
+------------  2022 Arbor Day  ------------
+
+V984 | Player Irrigation Protocol
+V985 | Arbor Day Task Operation Protocol
+V986 | Arbor Day Player Prize Pool Operation Protocol
+
+------------  Party Boost  ------------
+
+V991 | Player Boost
+V992 | Reset Reward Pool
+V993 | Claim Reward
+V994 | Boost Coin & Gems Conversion
+V507 | Lucky Chest Task
+V508 | Cumulative Login Reward
+
+------------  Stress Test  ------------
+
+S1 | Test Reg & Login
+S2 | Test GetProfile
+S3 | Test UploadProfile
+S4 | Test GetProfileMd5
+S5 | Test EndlessRankUploadScore
+
+------------  Future Gift Box  ------------
+
+V1010 | Buy Gift Box
+V1011 | Buy Free Item
+V1012 | Refresh Gift Box
+V1013 | Token Auto Redeem
+
+------------  Penny Gift Box  ------------
+
+V1020 | Buy Gift Box
+V1021 | Refresh Gift Pack
+V1022 | Custom Selection Config
+V1023 | Claim Progress Reward
+V1024 | Get Leaderboard
+
+------------  Plant Defense Battle  ------------
+
+V1030 | Battle Settlement
+V1031 | Claim Star Task Reward
+
+------------  Autumn Harvest Battle  ------------
+
+V1033 | Player Gacha
+V1035 | Convert Gems
+V1036 | Query Personal Win Record
+T990 | Add Server-wide Gem Prize Pool
+
+------------  October Co-op  ------------
+
+V1050 | Claim Member Token
+V1051 | Apply to Join Squad
+V1052 | Operate Application List
+V1053 | Claim Task
+T1002 | Delete Test Data
+T1003 | Delete Log Counter
+
+------------  Minigames Festival  ------------
+
+V1070 | Battle Settlement
+V1071 | Claim Points Reward
+V1072 | Strengthen Buff
+
+------------  Costume Party  ------------
+
+V1080 | Gacha
+V1081 | Task
+V1082 | Win Record
+T1004 | Batch Add Plant Piece to Users
+
+------------  Gingle Bells/Destruction Event  ------------
+
+V1090 | Leaderboard Query
+V1091 | Clear Settlement
+V1092 | Leaderboard Settlement
+V1093 | Task
+V1094 | Heartbeat Score
+T1007 | Query GM Leaderboard
+T1008 | Leaderboard Operation
+T1009 | Lucky Chest Clear Data (Test)
+
+------------  New Year Gift Pack  ------------
+
+V1110 | Cumulative Recharge Reward Claim
+V1111 | Open Chest Reward
+V1112 | Free Gift Pack Claim
+T1034 | GM Tool: Supplement Cumulative Recharge
+
+------------  Red Envelope Claim Reward  ------------
+
+V1120 | Claim Online Reward/Claim Lucky User Reward
+V1121 | Register for Physical Prize Gacha
+V1122 | Claim Task Reward
+V1130 | Query Costume Collection
+V1131 | Claim Costume Collection Reward
+
+------------  Heavenly Treasure  ------------
+
+V1150 | Player Gacha
+V1151 | Use Discount Code
+V1152 | Check Discount Code Status
+V1153 | Cumulative Gacha Claim Reward
+V1154 | Query Personal Win Record
+T1020 | Test Gacha
+T1021 | Delete Event Data
+T1032 | GM Tool: Query Discount Code
+
+------------  Ad-free Card  ------------
+
+T1024 | Modify Ad-free Card Benefit
+
+------------  Sea God Treasure  ------------
+
+V1160 | Sea God Gacha
+V1161 | Open Ultimate Chest
+V1162 | Open Sea God Chest
+
+------------  Common Methods  ------------
+
+V1163 | Various Events Settlement: Token to Gems
+V1164 | Query Various Events: Win Record
+T1030 | Set Various Events: Gacha Record
+V1170 | Client Avatar Sync to Server
+T1035 | GM Player Avatar List Operation
+T1037 | GM Cheat Flag List Operation
+T1038 | GM Leaderboard Operation
+
+------------  Zen Garden  ------------
+
+NOTE: mode not implemented yet.
+
+V1180 | Get Garden Data
+V1181 | Plant
+V1182 | Operate Flowerpot Plant
+V1183 | Transplant to Special Flowerpot
+V1184 | Garden Tutorial Complete
+
+------------  Zombie Removal Plan  ------------
+
+V1190 | Zombie Removal Settlement
+V1191 | Zombie Removal Claim Idle Reward
+V1192 | Zombie Removal Claim Task
+
+------------  Chroma Bundles Event  ------------
+
+V1200 | Chroma Claim Task
+V1201 | Chroma Add Custom Key
+V1202 | Chroma Claim Free Gift Pack
+T1033 | GM Tool: Auto Complete Order for Chroma Event
+
+------------  PvP Mode  ------------
+
+NOTE: this mode was removed, so the commands listed here are no longer in use.
+
+P1 | PVP login
+P3 | Save defending layout
+P4 | Read defending layout
+P5 | Opponent and layout
+P6 | Battle ending
+P7 | Replay list
+P8 | Replay download
+P9 | Replay upload
+P10 | Change opponent
+P11 | Training infos
+P12 | Sell zombies
+P13 | Refresh trainable
+P14 | Train zombie
+P15 | Finish training now
+P16 | Finish training cost
+P20 | Ping
+P21 | Rank
+P22 | Another army
+P49 | Entry
+P50 | Map info
+P51 | Achievements
+P52 | Unlock
+P53 | Change enemy
+P54 | Compensation notice
+P100 | Achievement
+P121 | Buy arena currency
+P122 | Lab enter
+P123 | Begin upgrade
+P124 | Complete upgrade
+P125 |
+P127 | Spend arena currency
+P128 | Finish upgrade with gems
+P130 | Cancel upgrade
